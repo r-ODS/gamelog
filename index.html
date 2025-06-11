@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>R.O.D.S - GameLog</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container-principal">
+        <header class="site-header">
+            <h1>R.O.D.S</h1>
+            <p class="subtitle">Rodrigo's Online Digital Stories</p>
+        </header>
+        
+        <div style="text-align: center; margin-bottom: 20px;">
+            <button id="btn-abrir-modal-novo-jogo" class="botao-acao-principal">➕ Adicionar Novo Jogo</button>
+        </div>
+
+        <nav class="abas-plataforma">
+            <button data-plataforma="pc" class="aba-ativa">PC</button>
+            <button data-plataforma="ps">PlayStation</button>
+        </nav>
+
+        <main class="conteudo-principal">
+            <section id="secao-pc" class="conteudo-plataforma visivel">
+                <h2>Jogos de PC</h2>
+                <div class="filtros-container" id="filtros-pc-aquisicao">
+                    <strong>Filtrar por Aquisição (PC):</strong>
+                    <button class="filtro-btn filtro-ativo" data-filtro-aquisicao="todos">Todos</button>
+                    <button class="filtro-btn" data-filtro-aquisicao="tenho">Tenho</button>
+                    <button class="filtro-btn" data-filtro-aquisicao="naotenho">Não Tenho</button>
+                </div>
+                <div class="filtros-container" id="filtros-pc-genero">
+                    <strong>Filtrar por Gênero (PC):</strong>
+                    <button class="filtro-btn filtro-ativo" data-plataforma-prefixo="pc" data-filtro-genero="todos">Todos</button>
+                    <button class="filtro-btn" data-plataforma-prefixo="pc" data-filtro-genero="acao">Ação</button>
+                    <button class="filtro-btn" data-plataforma-prefixo="pc" data-filtro-genero="aventura">Aventura</button>
+                    <button class="filtro-btn" data-plataforma-prefixo="pc" data-filtro-genero="rpg">RPG</button>
+                    <button class="filtro-btn" data-plataforma-prefixo="pc" data-filtro-genero="fantasia">Fantasia</button>
+                    <button class="filtro-btn" data-plataforma-prefixo="pc" data-filtro-genero="espaco">Espaço</button>
+                    <button class="filtro-btn" data-plataforma-prefixo="pc" data-filtro-genero="misterio">Mistério</button>
+                    <button class="filtro-btn" data-plataforma-prefixo="pc" data-filtro-genero="simulacao">Simulação</button>
+                    <button class="filtro-btn" data-plataforma-prefixo="pc" data-filtro-genero="puzzle">Puzzle</button>
+                    <button class="filtro-btn" data-plataforma-prefixo="pc" data-filtro-genero="nicho">Nicho</button>
+                </div>
+                <nav class="sub-abas-categorias">
+                    <button data-categoria-target="pc-jj" class="sub-aba-ativa">Já Joguei</button>
+                    <button data-categoria-target="pc-ej">Estou Jogando</button>
+                    <button data-categoria-target="pc-qj">Quero Jogar</button>
+                </nav>
+                <div class="conteudo-sub-categoria">
+                    <div id="pc-jj" class="sub-categoria-painel visivel"><ul></ul></div>
+                    <div id="pc-ej" class="sub-categoria-painel"><ul></ul></div>
+                    <div id="pc-qj" class="sub-categoria-painel"><ul></ul></div>
+                </div>
+            </section>
+            <section id="secao-ps" class="conteudo-plataforma">
+                <h2>Jogos de PlayStation</h2>
+                <div class="filtros-container" id="filtros-ps-aquisicao">
+                    <strong>Filtrar por Aquisição (PS):</strong>
+                    <button class="filtro-btn filtro-ativo" data-filtro-aquisicao="todos">Todos</button>
+                    <button class="filtro-btn" data-filtro-aquisicao="cd">Mídia Física</button>
+                    <button class="filtro-btn" data-filtro-aquisicao="plus">Plus</button>
+                    <button class="filtro-btn" data-filtro-aquisicao="comprado-digital">Digital</button>
+                </div>
+                <div class="filtros-container" id="filtros-ps-genero">
+                    <strong>Filtrar por Gênero (PS):</strong>
+                    <button class="filtro-btn filtro-ativo" data-plataforma-prefixo="ps" data-filtro-genero="todos">Todos</button>
+                    <button class="filtro-btn" data-plataforma-prefixo="ps" data-filtro-genero="acao">Ação</button>
+                    <button class="filtro-btn" data-plataforma-prefixo="ps" data-filtro-genero="aventura">Aventura</button>
+                    <button class="filtro-btn" data-plataforma-prefixo="ps" data-filtro-genero="rpg">RPG</button>
+                    <button class="filtro-btn" data-plataforma-prefixo="ps" data-filtro-genero="fantasia">Fantasia</button>
+                    <button class="filtro-btn" data-plataforma-prefixo="ps" data-filtro-genero="espaco">Espaço</button>
+                    <button class="filtro-btn" data-plataforma-prefixo="ps" data-filtro-genero="misterio">Mistério</button>
+                    <button class="filtro-btn" data-plataforma-prefixo="ps" data-filtro-genero="simulacao">Simulação</button>
+                    <button class="filtro-btn" data-plataforma-prefixo="ps" data-filtro-genero="puzzle">Puzzle</button>
+                    <button class="filtro-btn" data-plataforma-prefixo="ps" data-filtro-genero="nicho">Nicho</button>
+                </div>
+                <nav class="sub-abas-categorias">
+                    <button data-categoria-target="ps-jj" class="sub-aba-ativa">Já Joguei</button>
+                    <button data-categoria-target="ps-ej">Estou Jogando</button>
+                    <button data-categoria-target="ps-qj">Quero Jogar</button>
+                </nav>
+                <div class="conteudo-sub-categoria">
+                    <div id="ps-jj" class="sub-categoria-painel visivel"><ul></ul></div>
+                    <div id="ps-ej" class="sub-categoria-painel"><ul></ul></div>
+                    <div id="ps-qj" class="sub-categoria-painel"><ul></ul></div>
+                </div>
+            </section>
+        </main>
+    </div>
+    
+    <div id="modal-novo-jogo" class="modal-container">
+        <div class="modal-content">
+            <span class="modal-fechar" title="Fechar">&times;</span>
+            <h2>Adicionar Novo Jogo</h2>
+            <form id="form-novo-jogo">
+                <label for="titulo-jogo">Título do Jogo:</label><input type="text" id="titulo-jogo" name="titulo" placeholder="Ex: Cyber Odyssey" required>
+                <label for="plataforma-jogo">Plataforma:</label><select id="plataforma-jogo" name="plataforma" required><option value="" disabled selected>Selecione...</option><option value="pc">PC</option><option value="ps">PlayStation</option></select>
+                <label for="status-jogo">Status de Jogo:</label><select id="status-jogo" name="statusCategoria" required><option value="" disabled selected>Selecione...</option><option value="jj">Já Joguei</option><option value="ej">Estou Jogando</option><option value="qj">Quero Jogar</option></select>
+                <label for="imagem-jogo">URL da Imagem da Capa:</label><input type="url" id="imagem-jogo" name="imagemCapa" placeholder="https://exemplo.com/capa.jpg" required>
+                <label for="data-lancamento-jogo">Data de Lançamento:</label><input type="text" id="data-lancamento-jogo" name="dataLancamento" placeholder="Ex: 15/07/2024">
+                <label for="generos-jogo">Gêneros (separados por vírgula):</label><input type="text" id="generos-jogo" name="generos" placeholder="Ex: rpg,acao,aventura">
+                <hr><h3 style="margin-top: 20px; text-align: center;">Avaliação Detalhada (Opcional)</h3>
+                <label for="nota-jogo">Nota (ex: 8.5/10):</label><input type="text" id="nota-jogo" name="nota">
+                <label for="destaque-jogo">Destaque do Jogo:</label><textarea id="destaque-jogo" name="destaque" rows="2" placeholder="Ex: A batalha final..."></textarea>
+                <label for="rejogar-jogo">Potencial para Rejogar:</label><input type="text" id="rejogar-jogo" name="potencialRejogar" placeholder="Ex: Alto, Médio, Baixo...">
+                <label for="conclusao-jogo">Data de Conclusão:</label><input type="text" id="conclusao-jogo" name="dataConclusao" placeholder="Ex: 20/02/2025">
+                <label for="comentarios-jogo">Comentários:</label><textarea id="comentarios-jogo" name="comentarios" rows="4" placeholder="Sua resenha..."></textarea>
+                <label for="screenshots-jogo">Screenshots (URLs separadas por vírgula):</label><textarea id="screenshots-jogo" name="screenshots" rows="3" placeholder="https://exemplo.com/ss1.jpg, https://exemplo.com/ss2.jpg"></textarea>
+                <div class="form-acoes"><button type="button" class="btn-cancelar">Cancelar</button><button type="submit" class="btn-salvar">Salvar Jogo</button></div>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js" defer></script>
+</body>
+</html>

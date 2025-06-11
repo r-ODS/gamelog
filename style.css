@@ -1,0 +1,165 @@
+/* Estilos Globais Básicos */
+body { 
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f8; 
+    color: #333; 
+    line-height: 1.6;
+}
+.container-principal {
+    width: 90%; max-width: 1200px; margin: 20px auto; padding: 20px; background-color: #fff; box-shadow: 0 0 15px rgba(0,0,0,0.1); border-radius: 8px;
+}
+h2, h3, h4, h5 { color: #2c3e50; margin-top: 0.5em; margin-bottom: 0.5em; }
+ul { list-style-type: none; padding-left: 0; }
+hr { border: 0; height: 1px; background-color: #e0e0e0; margin: 20px 0; }
+
+/* Cabeçalho */
+.site-header {
+    background: #1e1e1e; padding: 25px 20px; margin-bottom: 30px; border-radius: 8px; text-align: center; box-shadow: 0 4px 8px rgba(0,0,0,0.2); border: 1px solid #333;
+}
+.site-header h1 {
+    font-family: 'Orbitron', sans-serif; font-size: 3.5em; color: #f5f5f5; text-shadow: 0 0 4px #fff, 0 0 8px #fff, 0 0 12px #9A1E2E, 0 0 16px #9A1E2E, 0 0 20px #9A1E2E; margin: 0;
+}
+.site-header .subtitle {
+    font-size: 1.1em; color: #ccc; margin: 5px 0 0 0; font-style: italic; letter-spacing: 1px;
+}
+.botao-acao-principal {
+    padding: 10px 20px; font-size: 1.1em; font-weight: bold; color: #fff; background-color: #28a745; border: none; border-radius: 5px; cursor: pointer; transition: background-color 0.2s ease;
+}
+.botao-acao-principal:hover { background-color: #218838; }
+
+/* Abas de Plataforma */
+nav.abas-plataforma {
+    border-bottom: 1px solid #9A1E2E; margin-bottom: 0; padding-left: 10px; background-color: #f9f9f9; border-radius: 6px 6px 0 0; padding-top: 5px;
+}
+nav.abas-plataforma button {
+    padding: 12px 22px; margin-right: 4px; border: 1px solid #ccc; border-bottom: none; background-color: #f0f0f0; color: #555; cursor: pointer; border-radius: 6px 6px 0 0; font-weight: 500; font-size: 1em; transition: all 0.2s ease-in-out; position: relative; top: 1px;
+}
+nav.abas-plataforma button:not(.aba-ativa):hover { background-color: #e0e0e0; color: #333; border-color: #bbb; }
+nav.abas-plataforma button.aba-ativa {
+    background-color: #fff; color: #9A1E2E; border-top: 2px solid #9A1E2E; border-left: 1px solid #9A1E2E; border-right: 1px solid #9A1E2E; border-bottom: 1px solid #fff; font-weight: bold; position: relative; z-index: 1;
+}
+.conteudo-plataforma { 
+    display: none; border: 1px solid #9A1E2E; padding: 25px; margin-top: -1px; background-color: #fff; border-radius: 0 0 6px 6px; position: relative;
+}
+.conteudo-plataforma.visivel { display: block; }
+
+/* Filtros */
+.filtros-container {
+    margin-top: 15px; margin-bottom: 20px; padding: 12px 15px; background-color: #f8f9fa; border: 1px solid #dee2e6; border-radius: 5px; display: flex; flex-wrap: wrap; align-items: center; gap: 8px;
+}
+.filtros-container strong { margin-right: 10px; font-weight: bold; color: #495057; font-size: 0.9em; }
+.filtro-btn {
+    padding: 7px 14px; border: 1px solid #ced4da; background-color: #fff; color: #495057; cursor: pointer; border-radius: 4px; font-size: 0.85em; transition: all 0.2s ease;
+}
+.filtro-btn:hover { background-color: #e9ecef; border-color: #adb5bd; color: #212529; }
+.filtro-btn.filtro-ativo {
+    background-color: #9A1E2E; color: white; border-color: #9A1E2E; font-weight: bold; box-shadow: 0 0 0 0.2rem rgba(154, 30, 46, 0.25);
+}
+
+/* Sub-Abas de Categoria */
+.sub-abas-categorias { margin-top: 20px; margin-bottom: 0; padding-bottom: 0; padding-left: 10px; }
+.sub-abas-categorias button {
+    padding: 9px 18px; margin-right: 2px; border: 1px solid transparent; border-bottom: none; background-color: transparent; color: #8A1C2C; cursor: pointer; border-radius: 5px 5px 0 0; font-size: 0.9em; font-weight: 500; transition: all 0.2s ease-in-out; position: relative;
+}
+.sub-abas-categorias button:not(.sub-aba-ativa):hover { background-color: #e9ecef; color: #9A1E2E; border-color: #dee2e6 transparent transparent transparent; }
+.sub-abas-categorias button.sub-aba-ativa {
+    background-color: #e0e0e0; color: #9A1E2E; border: 1px solid #9A1E2E; border-bottom: none; font-weight: bold; position: relative;       
+}
+.conteudo-sub-categoria .sub-categoria-painel { display: none; padding: 20px; background-color: #fff; margin-top: 0; }
+.conteudo-sub-categoria .sub-categoria-painel.visivel {
+    display: block; border: 1px solid #9A1E2E; border-radius: 5px; margin-top: 0; 
+}
+        
+/* Resumo do Jogo */
+li.item-jogo { margin-bottom: 20px; }
+.resumo-jogo {
+    display: flex; align-items: center; cursor: pointer; border: 1px solid #e0e0e0; padding: 15px; background-color: #fff; border-radius: 6px; position: relative; transition: all 0.2s ease-in-out; box-shadow: 0 1px 3px rgba(0,0,0,0.05); 
+}
+.resumo-jogo:hover { box-shadow: 0 4px 12px rgba(0,0,0,0.1); transform: translateY(-3px); }
+.resumo-jogo img {
+    width: 120px; height: 180px; object-fit: cover; margin-right: 20px; border-radius: 4px; flex-shrink: 0;
+}
+.resumo-jogo div.info-principal { flex-grow: 1; }
+.resumo-jogo div.info-principal p { margin: 3px 0; }
+.resumo-jogo div.info-principal p strong { font-size: 1.2em; color: #2c3e50; display: block; margin-bottom: 2px; }
+.resumo-jogo div.info-principal p:not(:has(strong)) { font-size: 0.9em; color: #666; }
+.resumo-jogo span.clique-detalhes {
+    font-size: 0.85em; color: #fff; background-color: #9A1E2E; padding: 6px 12px; border-radius: 4px; font-weight: bold; text-decoration: none; transition: background-color 0.2s ease; position: absolute; right: 15px; bottom: 15px;
+}
+.resumo-jogo span.clique-detalhes:hover { background-color: #8A1C2C; }
+
+/* Botões de Ação do Card (Editar/Deletar) */
+.botoes-acao-card {
+    position: absolute; top: 12px; right: 12px; z-index: 5; display: flex; gap: 8px;
+}
+.botoes-acao-card button {
+    background-color: #fff; border: 1px solid #ccc; border-radius: 50%; width: 34px; height: 34px; font-size: 16px; line-height: 1; cursor: pointer; transition: all 0.2s ease-in-out; display: flex; align-items: center; justify-content: center; padding: 0;
+}
+.botoes-acao-card button:hover { box-shadow: 0 2px 5px rgba(0,0,0,0.15); transform: translateY(-1px); }
+.btn-editar:hover { background-color: #e9ecef; color: #9A1E2E; border-color: #9A1E2E; }
+.btn-deletar:hover { background-color: #fff0f0; color: #dc3545; border-color: #dc3545; }
+
+/* Detalhes Expandidos do Jogo */
+.detalhes-jogo {
+    background-color: #fdfdfd; border-left: 1px solid #e0e0e0; border-right: 1px solid #e0e0e0; border-bottom: 1px solid #e0e0e0; border-radius: 0 0 6px 6px; max-height: 0; overflow: hidden; padding: 0 20px; transition: max-height 0.4s ease-in-out, padding 0.4s ease-in-out;
+}
+.detalhes-jogo.visivel {
+    max-height: 2000px; padding: 20px; border-top: 1px solid #e0e0e0;
+}
+.resumo-jogo.detalhes-mostrando {
+    border-bottom-left-radius: 0; border-bottom-right-radius: 0; box-shadow: 0 1px 3px rgba(0,0,0,0.05); transform: translateY(0); 
+}
+
+/* Textos da Avaliação */
+.detalhes-avaliacao h4 { 
+    font-size: 1.2em; color: #9A1E2E; margin-top: 1em; margin-bottom: 10px; border-bottom: 1px solid #eee; padding-bottom: 0.3em;
+}
+.detalhes-avaliacao h5 { font-size: 1.1em; color: #2c3e50; margin-top: 25px; margin-bottom: 10px; border-bottom: 1px solid #eee; padding-bottom: 0.3em; }
+.detalhes-avaliacao p { font-size: 0.95em; line-height: 1.65; margin-bottom: 14px; color: #4a4a4a; }
+.detalhes-avaliacao p strong { color: #333; margin-right: 6px; font-weight: 600; }
+.detalhes-avaliacao p.texto-resenha {
+    font-size: 0.95em; line-height: 1.65; margin-top: 20px; margin-bottom: 15px; padding: 15px; background-color: #f8f9fa; border-left: 4px solid #9A1E2E; border-radius: 4px; color: #333;
+}
+.detalhes-avaliacao p.texto-resenha strong { 
+    display: block; font-size: 1.05em; color: #9A1E2E; margin-bottom: 10px; font-weight: bold; margin-right: 0; 
+}
+.detalhes-avaliacao ul { display: flex; flex-wrap: wrap; gap: 10px; padding-left: 0; }
+.detalhes-avaliacao ul li { margin-bottom: 0; }
+.detalhes-avaliacao ul li img { width: 200px; height: 120px; object-fit: cover; border: 1px solid #ddd; border-radius: 4px; }
+
+/* Indicadores de Aquisição (PS) */
+li.item-jogo[data-tipo-aquisicao="plus"] .resumo-jogo { border-left: 6px solid gold; padding-left: 11px; }
+li.item-jogo[data-tipo-aquisicao="cd"] .resumo-jogo { border-left: 6px solid #778899; padding-left: 11px; }
+li.item-jogo[data-tipo-aquisicao="comprado-digital"] .resumo-jogo { border-left: 6px solid #8FBC8F; padding-left: 11px; }
+
+/* Modal e Formulário */
+.modal-container {
+    visibility: hidden; opacity: 0; position: fixed; z-index: 1000; left: 0; top: 0; width: 100%; height: 100%; overflow: auto; background-color: rgba(0,0,0,0.6); padding-top: 60px; transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out; 
+}
+.modal-container.visivel { visibility: visible; opacity: 1; }
+.modal-content {
+    background-color: #fefefe; margin: 5% auto; padding: 25px 35px; border: 1px solid #888; width: 90%; max-width: 550px; border-radius: 8px; position: relative; box-shadow: 0 5px 15px rgba(0,0,0,0.3); transform: scale(0.98); transition: transform 0.3s ease-in-out;
+}
+.modal-container.visivel .modal-content { transform: scale(1); }
+.modal-fechar {
+    color: #aaa; position: absolute; top: 10px; right: 20px; font-size: 32px; font-weight: bold; line-height: 1; cursor: pointer;
+}
+.modal-fechar:hover, .modal-fechar:focus { color: black; }
+#form-novo-jogo label { display: block; margin-top: 16px; margin-bottom: 5px; font-weight: bold; color: #444; }
+#form-novo-jogo input, #form-novo-jogo select, #form-novo-jogo textarea {
+    width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box; font-family: inherit; font-size: inherit;
+}
+.form-acoes {
+    display: flex; justify-content: flex-end; gap: 10px; margin-top: 25px; border-top: 1px solid #eee; padding-top: 20px;
+}
+.form-acoes button {
+    padding: 10px 20px; border-radius: 5px; border: 1px solid #ccc; cursor: pointer; font-weight: bold;
+}
+.form-acoes .btn-salvar {
+    background-color: #9A1E2E; color: white; border-color: #9A1E2E;
+}
+.form-acoes .btn-salvar:hover { background-color: #8A1C2C; }
+.form-acoes .btn-cancelar { background-color: #f8f9fa; }
+.form-acoes .btn-cancelar:hover { background-color: #e2e6ea; }
