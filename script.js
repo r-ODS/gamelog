@@ -115,7 +115,7 @@ if (dadosSalvosString) {
 					"destaque": "O jogo é completamente maluco no melhor sentido possível. A comédia é totalmente insana, daquelas que te pega de surpresa e te faz rir do nada — e, ao mesmo tempo, ele entrega um mistério super envolvente que te prende até o final.",
 					"potencialRejogar": "Só depois de esquecer boa parte do que rolou, porque o impacto da história é grande e depende muito do fator surpresa.",
 					"dataConclusao": null,
-					"comentarios": "Jogo bonzão Sabe misturar o nonsense com momentos sérios de um jeito que funciona demais. Vale muito a pena pra quem curte visual novel com personalidade forte."
+					"comentarios": "Jogo bonzão. Sabe misturar o nonsense com momentos sérios de um jeito que funciona demais. Vale muito a pena pra quem curte visual novel com personalidade forte.",
 					"screenshots": []
 				}
 			},
@@ -135,10 +135,10 @@ if (dadosSalvosString) {
 				"screenshots": [],
 				"avaliacao": {
 					"nota": "8",
-					"destaque": "A ambientação é surreal. Toda aquela vibe de cidadezinha sombria no meio da floresta, com névoa, postes piscando e trilha sonora tensa... parece que você tá preso dentro de um livro de terror (e é exatamente essa a ideia). A narrativa te puxa forte, quase como se o jogo estivesse escrevendo ele mesmo enquanto você joga.",
-					"potencialRejogar": "Médio. É uma experiência bem fechada e marcante, então talvez só daqui um tempo — mas ainda assim dá vontade de revisitar o clima e tentar pegar mais detalhes escondidos.",
+					"destaque": "A ambientação é surreal. Toda aquela vibe de cidadezinha sombria no meio da floresta, com névoa, postes piscando e trilha sonora tensa... parece que você esta preso dentro de um livro de terror (e é exatamente essa a ideia). A narrativa te puxa forte, quase como se o jogo estivesse escrevendo ele mesmo enquanto você joga.",
+					"potencialRejogar": "Médio. É uma experiência bem fechada e marcante, então talvez só daqui um tempo ? mas ainda assim fico vontade de revisitar o clima e tentar pegar mais detalhes escondidos.",
 					"dataConclusao": null,
-					"comentarios": "É tipo jogar um episódio longo de 'Além da Imaginação' com lanterna na mão. Super estiloso, bem escrito e com aquela pegada de “jogo que sabe o que tá fazendo”. Me surpreendeu bastante — uma mistura estranha de ação, terror psicológico e metalinguagem, e tudo isso funciona.",
+					"comentarios": "Acho que o tema/premissa do jogo é o que mais chama atenção pra mim. Ele é bem escrito e com aquela pegada de jogo que sabe o que faz. Me surpreendeu bastante uma mistura estranha de ação, terror psicológico e metalinguagem, e tudo isso funciona. As coisas que acontecem durante o jogo, o coletáveis, as televisões com os programas, e principalmente a música, todos esses fatores que estão no jogo fazem parte do enredo então parece que realmente aquele universo está rodeado por essa energia sombria que ta pronta pra engolir o Allan e o jogador.",
 					"screenshots": []
 				}
 			},
@@ -224,11 +224,11 @@ if (dadosSalvosString) {
 				],
 				"screenshots": [],
 				"avaliacao": {
-					"nota": "10",
+					"nota": null,
 					"destaque": null,
-					"potencialRejogar": "Muito",
+					"potencialRejogar": null,
 					"dataConclusao": null,
-					"comentarios": "Estética mais daora de todos da From Software",
+					"comentarios": null,
 					"screenshots": []
 				}
 			},
